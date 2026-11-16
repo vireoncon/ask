@@ -1,0 +1,265 @@
+<!doctype html><html><head><meta charset=utf-8><title>Ask Before You Act</title><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<style>
+  :root{--navy:#14263F;--gold:#C9A227;--cream:#F7F3E9;--ink:#1F2937;--muted:#5B6470;--line:#E3DDCF;--white:#fff}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:Calibri,"Segoe UI",Helvetica,Arial,sans-serif;color:var(--ink);background:var(--white);line-height:1.45;font-size:17px}
+  header{background:var(--navy);color:#fff;padding:28px 20px 24px}
+  .kicker{color:#DDE3EE;font-size:11px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;margin:0 0 10px}
+  h1{font-family:Cambria,Georgia,serif;font-size:34px;margin:0 0 6px;line-height:1.1}
+  header p{margin:0;color:#DDE3EE;font-size:16px}
+  nav{position:sticky;top:0;background:var(--white);border-bottom:1px solid var(--line);display:flex;gap:6px;overflow-x:auto;padding:10px 14px;z-index:5;-webkit-overflow-scrolling:touch}
+  nav a{white-space:nowrap;text-decoration:none;color:var(--navy);font-weight:700;font-size:14px;padding:7px 12px;border:1px solid var(--line);border-radius:999px}
+  main{max-width:760px;margin:0 auto;padding:8px 18px 60px}
+  section{padding:26px 0 8px}
+  h2{font-family:Cambria,Georgia,serif;color:var(--navy);font-size:26px;margin:0 0 6px}
+  .lead{color:var(--muted);margin:0 0 16px;font-size:16px}
+  .card{background:var(--cream);border-radius:12px;padding:16px 16px 14px;margin:0 0 12px}
+  .card h3{margin:0 0 6px;font-size:18px;color:var(--navy)}
+  .row{display:flex;gap:12px;align-items:flex-start}
+  .num{flex:0 0 32px;height:32px;border-radius:50%;background:var(--gold);color:var(--navy);font-weight:800;display:flex;align-items:center;justify-content:center;font-size:15px}
+  .btns{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 0}
+  .btn{display:inline-block;text-decoration:none;background:var(--navy);color:#fff;font-weight:700;padding:11px 16px;border-radius:10px;font-size:15px;border:0;cursor:pointer}
+  .btn.alt{background:#fff;color:var(--navy);border:1.5px solid var(--navy)}
+  .btn.gold{background:var(--gold);color:var(--navy)}
+  .prompt{background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px;margin:10px 0 8px;font-size:16px;white-space:pre-wrap}
+  .ask{display:grid;grid-template-columns:1fr;gap:10px}
+  .ask .card{margin:0}
+  .letter{font-family:Cambria,Georgia,serif;font-size:14px;line-height:1.4}
+  .ok{color:#2E7D4F;font-weight:700}
+  .small{font-size:14px;color:var(--muted)}
+  .verify{font-size:14px;color:var(--muted);margin:6px 0 0}
+  .verify b{color:var(--navy)}
+  footer{border-top:1px solid var(--line);padding:22px 18px 40px;text-align:center;color:var(--muted);font-size:13px}
+  .toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:var(--navy);color:#fff;padding:10px 16px;border-radius:999px;font-size:14px;opacity:0;transition:opacity .2s;pointer-events:none}
+  .toast.show{opacity:1}
+  details summary{cursor:pointer;font-weight:700;color:var(--navy)}
+  @media(min-width:640px){.ask{grid-template-columns:1fr 1fr 1fr}}
+</style>
+<header>
+  <p class="kicker">Financial Fridays &nbsp;|&nbsp; Enon Tabernacle Baptist Church Financial Ministry</p>
+  <h1>Ask Before You Act</h1>
+  <p>Using AI as a counselor for everyday money decisions. Everything from tonight lives on this page. Nothing here asks for your personal information.</p>
+</header>
+
+<nav>
+  <a href="#start">Start</a><a href="#basics">How it works</a><a href="#rules">Five rules</a><a href="#asking">How to ask</a><a href="#ask">ASK</a><a href="#cards">Prompt cards</a><a href="#practice">Practice</a><a href="#help">Verify &amp; help</a><a href="#survey">Survey</a>
+</nav>
+
+<main>
+
+<section id="start">
+  <h2>Start here</h2>
+  <p class="lead">Two steps before we begin. One minute.</p>
+  <div class="card">
+    <div class="row"><div class="num">1</div><div><h3>Open a free AI assistant</h3>
+      <p style="margin:0">Any one of these. The method tonight works the same in each. Open it in a second tab or app and leave this page open.</p>
+      <div class="btns">
+        <a class="btn" href="https://chatgpt.com" target="_blank" rel="noopener">ChatGPT</a>
+        <a class="btn" href="https://gemini.google.com" target="_blank" rel="noopener">Gemini</a>
+        <a class="btn" href="https://copilot.microsoft.com" target="_blank" rel="noopener">Copilot</a>
+        <a class="btn" href="https://claude.ai" target="_blank" rel="noopener">Claude</a>
+      </div></div></div>
+  </div>
+  <div class="card">
+    <div class="row"><div class="num">2</div><div><h3>One-minute check</h3>
+      <p style="margin:0">Four questions, anonymous. We ask the same four at the end so the ministry can see what the session taught.</p>
+      <div class="btns"><a class="btn gold" id="preSurvey" href="#" target="_blank" rel="noopener">Open the check-in</a></div></div></div>
+  </div>
+</section>
+
+<section id="basics">
+  <h2>How it works, in plain words</h2>
+  <p class="lead">Like your phone's next-word suggestion, scaled up.</p>
+  <div class="card"><h3>It predicts words</h3>It learned from huge amounts of text. It does not look facts up unless it searches the web.</div>
+  <div class="card"><h3>Confident does not mean correct</h3>It can state a wrong number in the same tone as a right one (this is called hallucinating).</div>
+  <div class="card"><h3>Its knowledge stops at a date</h3>Today's rates, rules, and prices may be missing unless it searches or you tell it.</div>
+  <div class="card"><h3>It only knows what you tell it</h3>It cannot see your accounts, your credit report, or your mail.</div>
+  <div class="card" style="background:#fff;border:1px solid var(--line)"><h3>Stop and get a person when</h3>Money is about to move today. Someone is rushing you or asking for secrecy. It needs account numbers or passwords. You are filing taxes or signing a legal paper. The answer changes a big decision.</div>
+  <div class="card"><h3>The tools</h3>Each has a free version. Pick one and learn it well. <b>ChatGPT</b> (OpenAI): all-purpose, voice conversations. <b>Gemini</b> (Google): works with Gmail and Google search. <b>Copilot</b> (Microsoft): built into Windows, Edge, Word, and Outlook. <b>Claude</b> (Anthropic): long documents and careful explanations. <b>Meta AI</b>: inside WhatsApp, Facebook, and Instagram. <b>Your bank's app</b>: many banks have a built-in assistant inside their secure app.</div>
+</section>
+
+<section id="rules">
+  <h2>Five rules before you type</h2>
+  <p class="lead">They do not change from one assistant to another.</p>
+  <div class="card"><div class="row"><div class="num">1</div><div><h3>Nothing that identifies you.</h3>No account numbers, passwords, Social Security numbers, or your full name and address. Round numbers are enough for the assistant; keep the exact figures on your own list.</div></div></div>
+  <div class="card"><div class="row"><div class="num">2</div><div><h3>Give it the date and your real numbers.</h3>It does not know today's interest rates, your bank's rules, or your credit report. Tell it.</div></div></div>
+  <div class="card"><div class="row"><div class="num">3</div><div><h3>Ask for options and their risks.</h3>"Give me three ways to handle this and the risk of each" beats "what should I do."</div></div></div>
+  <div class="card"><div class="row"><div class="num">4</div><div><h3>Verify one fact before you act.</h3>A loan calculator, the source document, or a phone call. One check catches most wrong answers.</div></div></div>
+  <div class="card"><div class="row"><div class="num">5</div><div><h3>When money is about to move, a human confirms first.</h3>Your bank, a nonprofit credit counselor, your spouse, or a trusted advisor.</div></div></div>
+</section>
+
+<section id="asking">
+  <h2>How to ask</h2>
+  <p class="lead">Brief it like a great new hire. It works hard, but it only knows what you tell it.</p>
+  <div class="card"><div class="row"><div class="num">1</div><div><h3>Role</h3>"You are a patient budgeting coach."</div></div></div>
+  <div class="card"><div class="row"><div class="num">2</div><div><h3>Context</h3>"I am retired. My income is about $2,400 a month."</div></div></div>
+  <div class="card"><div class="row"><div class="num">3</div><div><h3>Task</h3>"Help me plan holiday spending under $500."</div></div></div>
+  <div class="card"><div class="row"><div class="num">4</div><div><h3>Boundaries</h3>"Do not suggest new credit. Tell me if you are unsure."</div></div></div>
+  <div class="card"><div class="row"><div class="num">5</div><div><h3>Format</h3>"A short list in plain words."</div></div></div>
+  <p><b>Then iterate:</b> tell it what worked, what missed, and go again.</p>
+  <div class="card" style="background:#fff;border:1px solid var(--line)"><h3>Six ways to get a better answer</h3>
+    <b>Ask where it got that.</b> "What is your source? Give me the link."<br>
+    <b>Allow "I don't know."</b> "If you are not sure, say so."<br>
+    <b>Ask it to show the math.</b> "Show each step so I can check it."<br>
+    <b>Ask what could be wrong.</b> "What might you be wrong about here?"<br>
+    <b>Correct it.</b> "My rent is $1,250, not $1,500. Redo it."<br>
+    <b>Start a new chat</b> for a new topic, so old details do not mix in.</div>
+</section>
+
+<section id="ask">
+  <h2>The ASK method</h2>
+  <p class="lead">Three moves, in this order, for any money question. <em>"Test all things; hold fast what is good." 1 Thessalonians 5:21</em></p>
+  <div class="ask">
+    <div class="card"><h3>A &nbsp;Anchor</h3>Give the facts, the numbers, and your boundaries: what you will not touch (rent, tithe, emergency fund) and your deadline.</div>
+    <div class="card"><h3>S &nbsp;Seek</h3>Ask for three options, the risk of each, and the questions you should ask before you decide. Options are the goal.</div>
+    <div class="card"><h3>K &nbsp;Keep testing</h3>Verify one number with an independent source. Ask "what could you be wrong about?" Take the result to a person.</div>
+  </div>
+</section>
+
+
+
+<section id="cards">
+  <h2>Prompt cards</h2>
+  <p class="lead">Tap <b>Copy</b>, paste into your assistant, then change the numbers in brackets to your own.</p>
+
+  <div class="card">
+    <h3>1. The holiday plan</h3>    <div class="prompt" id="p1">I have [$600] total for gifts, food, and travel between today and January 1. I need gifts for [9] people ([2 parents, 3 children, 2 friends, 2 coworkers]). I am hosting [one dinner for 8] and attending [two gatherings]. Build a plan that stays under my total, show me where I am most likely to overspend, and give me two ways to cut $100 if I need to.</div>
+    <button class="btn alt" data-copy="p1">Copy</button>
+    <p class="verify"><b>Keep testing:</b> add up the plan yourself. Does it land under your number?</p>
+  </div>
+
+  <div class="card">
+    <h3>2. The car offer</h3>    <div class="prompt" id="p2">A dealer is offering me an [$18,500] car with [$0] down, [72] months at [12%] APR, plus a [$1,800] extended warranty rolled into the loan. My take-home pay is [$3,400] a month and my rent is [$1,250]. Give me the monthly payment, the total I would pay over the life of the loan, three risks in this deal, and five questions to ask before I sign anything.</div>
+    <button class="btn alt" data-copy="p2">Copy</button>
+    <p class="verify"><b>Keep testing:</b> run $20,300 ($18,500 car plus the $1,800 warranty) at 12% for 72 months in the <a href="https://www.calculator.net/loan-calculator.html" target="_blank" rel="noopener">loan calculator</a>. Expected: about $397 a month, about $28,600 total. Follow-up to ask: "What changes if I skip the warranty?"</p>
+  </div>
+
+  <div class="card">
+    <h3>3. The letter</h3>    <div class="prompt" id="p3">Explain this letter to me in plain English. What is it asking me to do, by what date, and what happens if I do nothing? What three questions should I ask when I call the number on it?
+
+[Paste the text of the letter here, or attach a photo with your name, address, and account number covered.]</div>
+    <button class="btn alt" data-copy="p3">Copy</button>
+    <p class="verify"><b>Keep testing:</b> call the number printed on the letter itself, never one that arrives by text. A sample letter for practice is below.</p>
+  </div>
+
+  <div class="card">
+    <h3>4. The message</h3>    <div class="prompt" id="p4">Is this message likely a scam? List the signs and tell me what to do.
+
+Message: "Hi Mom, this is my new number. I am in trouble and need $400 on a gift card tonight. Please do not call, I cannot talk right now."</div>
+    <button class="btn alt" data-copy="p4">Copy</button>
+    <p class="verify"><b>Keep testing:</b> urgency plus secrecy plus gift cards or codes equals a scam. Hang up and call the person on the number you already have.</p>
+  </div>
+
+
+  <div class="card">
+    <h3>5. The statement (this week)</h3>
+        <div class="prompt" id="p7">Explain this to me in plain English: [paste one line from a pay stub, a 401(k) or retirement plan notice, or a savings account statement, with your name and account number removed]. What does it mean for me, what is one question I should ask my HR office or my bank, and what would change if I moved [$50] a month toward it?</div>
+    <button class="btn alt" data-copy="p7">Copy</button>
+    <p class="verify"><b>Keep testing:</b> take the one question to the person who administers the account.</p>
+  </div>
+
+
+  <div class="card">
+    <h3>6. Time on your side (this week)</h3>
+        <div class="prompt" id="p9">I am [___] years old. Show me, in a simple table, what [$50] a month becomes by age 65 at 4 percent, 7 percent, and 10 percent a year. Then show me the Rule of 72 for each rate: how many years until the money doubles, and how many doublings I have left. Explain it the way you would to a friend.</div>
+    <button class="btn alt" data-copy="p9">Copy</button>
+    <p class="verify"><b>Keep testing:</b> check one row in a compound interest calculator (<a href="https://www.investor.gov/financial-tools-calculators/calculators/compound-interest-calculator" target="_blank" rel="noopener">investor.gov</a>, from the SEC).</p>
+  </div>
+
+  <div class="card" style="background:#fff;border:2px solid var(--gold)">
+    <h3>Your turn: the template</h3>
+    <div class="prompt" id="p5">Here is my situation: [the facts, in round numbers, and what I will not touch]. I am deciding whether to [the decision] by [when]. Give me three options, the risk of each, the questions I should ask before deciding, and what you might be wrong about.</div>
+    <button class="btn alt" data-copy="p5">Copy</button>
+    <p class="verify"><b>Keep testing:</b> write down the one fact you will verify tomorrow and the one person you will bring the result to.</p>
+  </div>
+</section>
+
+<section id="practice">
+  <h2>Practice materials</h2>
+  <p class="lead">Fictional documents for the exercises. Copy and paste them into your assistant.</p>
+
+  <div class="card">
+    <h3>Sample letter (fictional)</h3>
+    <div class="prompt letter" id="p6">NORTHGATE RECOVERY SERVICES, LLC
+P.O. Box 4410, Wilmington, DE 19899
+
+Date: January 11, 2027
+Reference: NRS-2261-0937
+
+Dear Consumer,
+
+Northgate Recovery Services, LLC is a debt collector. We are trying to collect a debt that you owe to Delaware Valley Medical Associates. We will use any information you give us to help collect the debt.
+
+Our information shows: You had an account with Delaware Valley Medical Associates for services on March 14, 2026. As of December 31, 2026, you owed $1,284.50. Between December 31, 2026 and today, you were charged $0.00 in interest and $0.00 in fees, and you paid $0.00. Total amount of the debt now: $1,284.50.
+
+How can you dispute the debt? Call or write to us by February 15, 2027 to dispute all or part of the debt. If you do not, we will assume that our information is correct. If you write to us by February 15, 2027, we must stop collection on any amount you dispute until we send you information that shows you owe the debt.
+
+What else can you do? Write to ask for the name and address of the original creditor. Go to www.cfpb.gov/debt-collection to learn more about your rights.
+
+Contact us: (302) 555-0148, Monday to Friday, 9 am to 6 pm ET.</div>
+    <button class="btn alt" data-copy="p6">Copy the letter</button>
+    <p class="small">Modeled on the validation notice format collectors are required to send. What to notice: the dispute deadline, the amount, the original creditor, and the sentence about what happens if you do nothing.</p>
+  </div>
+
+  <div class="card">
+    <h3>Loan calculator</h3>
+    <p style="margin:0 0 8px">Use any one. These are free and ask for nothing personal.</p>
+    <div class="btns">
+      <a class="btn alt" href="https://www.calculator.net/loan-calculator.html" target="_blank" rel="noopener">Calculator.net</a>
+      <a class="btn alt" href="https://www.bankrate.com/loans/loan-calculator/" target="_blank" rel="noopener">Bankrate</a>
+    </div>
+  </div>
+</section>
+
+<section id="help">
+  <h2>Verify, and get a human</h2>
+  <p class="lead">The assistant prepares you for these conversations. It does not replace them.</p>
+  <div class="card"><h3>Know your rights</h3>
+    <b>Before you sign a loan:</b> the lender must show the APR and total finance charge in writing (Truth in Lending Act).<br>
+    <b>Debt collector:</b> must send a written notice; you get at least 30 days to dispute (Fair Debt Collection Practices Act).<br>
+    <b>Credit card error:</b> dispute in writing within 60 days of the statement (Fair Credit Billing Act).<br>
+    <b>Identity theft worry:</b> a credit freeze at all three bureaus is free.<br>
+    <b>Buying a car:</b> there is generally no 3-day right to cancel once you sign at the dealer.<br>
+    <span class="small">General information, not legal advice.</span></div>
+  <div class="card"><h3>Free nonprofit credit counseling</h3><a href="https://www.nfcc.org" target="_blank" rel="noopener">nfcc.org</a> or (800) 388-2227. Budget review, debt plans, housing counseling.</div>
+  <div class="card"><h3>Your credit report, free</h3><a href="https://www.annualcreditreport.com" target="_blank" rel="noopener">annualcreditreport.com</a>. The only site authorized by federal law. Weekly access from all three bureaus.</div>
+  <div class="card"><h3>Consumer Financial Protection Bureau</h3><a href="https://www.consumerfinance.gov" target="_blank" rel="noopener">consumerfinance.gov</a>. Plain-language guides on debt collection, auto loans, and credit. File a complaint about a company.</div>
+  <div class="card"><h3>Report a scam</h3><a href="https://reportfraud.ftc.gov" target="_blank" rel="noopener">reportfraud.ftc.gov</a>. For bank alerts: call the number on the back of your card. For a relative in trouble: call them on the number you already have.</div>
+  <div class="card"><h3>Enon Financial Ministry</h3>Financial Fridays run monthly. Announcements come by email and on the screens. Bring the question the assistant helped you sharpen.</div>
+</section>
+
+<section id="survey">
+  <h2>Before you go</h2>
+  <p class="lead">The same four questions as the start, plus three more. Anonymous, two minutes. Your answers shape what the ministry offers next.</p>
+  <div class="btns"><a class="btn gold" id="postSurvey" href="#" target="_blank" rel="noopener">Open the survey</a></div>
+  <div class="card" style="margin-top:18px">
+    <h3>Save this page</h3>
+    <p style="margin:0"><b>iPhone:</b> Share button, then "Add to Home Screen." <b>Android:</b> menu (three dots), then "Add to Home screen." The rules, the method, and the prompt cards stay here; nothing on this page expires.</p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  Prepared by Brandon Ford, Vireon Consulting LLC (brandon@vireonconsulting.com), for the Enon Tabernacle Baptist Church Financial Ministry. Free to share. Nothing on this page is legal, tax, or investment advice.
+</footer>
+
+<div class="toast" id="toast">Copied</div>
+
+<script>
+  // Set these two links once the forms exist.
+  var PRE_SURVEY_URL  = "https://forms.gle/REPLACE_PRE";
+  var POST_SURVEY_URL = "https://forms.gle/REPLACE_POST";
+  document.getElementById('preSurvey').href = PRE_SURVEY_URL;
+  document.getElementById('postSurvey').href = POST_SURVEY_URL;
+
+  function toast(msg){var t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');setTimeout(function(){t.classList.remove('show')},1400);}
+  function copyText(txt){
+    if(navigator.clipboard&&window.isSecureContext){return navigator.clipboard.writeText(txt).then(function(){toast('Copied. Paste it into your assistant.')});}
+    var ta=document.createElement('textarea');ta.value=txt;ta.style.position='fixed';ta.style.opacity='0';document.body.appendChild(ta);ta.focus();ta.select();
+    try{document.execCommand('copy');toast('Copied. Paste it into your assistant.')}catch(e){toast('Press and hold the text to copy')}document.body.removeChild(ta);
+  }
+  document.querySelectorAll('[data-copy]').forEach(function(b){b.addEventListener('click',function(){copyText(document.getElementById(b.getAttribute('data-copy')).innerText);});});
+</script>
+
+</body></html>
